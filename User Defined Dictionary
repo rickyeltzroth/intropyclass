@@ -1,0 +1,9 @@
+dictionary = {}
+while True:
+    key = input('What is the name of the field you would like to record? Type exit when finished.')
+    data = input('Please enter the data you would like to have populate the field. Type exit when finished.')
+    if key.upper() == 'EXIT' or data.upper() == 'EXIT':
+        print(dictionary)
+        break
+    else:
+        dictionary[key] = data
